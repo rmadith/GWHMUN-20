@@ -1,0 +1,793 @@
+/*
+Theme Name: Rock Band
+Theme URI: https://catchthemes.com/themes/rock-band/
+Author: Catch Themes
+Author URI: https://catchthemes.com/
+Description: Rock Band is a child theme of My Music Band, a simple yet power-packed music WordPress theme. As My Music Band is an elegant, simple yet attractive WordPress theme designed for the musician and music bands, the child theme version, Rock Band is designed for Rock and Metal Bands. As requested by many of our users, we have created a child theme - Rock Band which is a darker version of My Music band. Rock Band comes with all the features and functionality of My Music Band. It is designed in a darker shade (color scheme) which will surely attract more audiences to your music. Rock Band goes well with Rock and Heavy Metal Bands or Artist! Check out Theme Instructions at https://catchthemes.com/themes/rock-band/#theme-instructions, Support at https://catchthemes.com/support/ and Demo at https://catchthemes.com/demo/my-music-band/
+Version: 2.1
+Requires at least: 5.1
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: rock-band
+Template: my-music-band
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, entertainment, portfolio
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Colors
+ */
+
+/**
+ * 1.0 - Colors
+ */
+
+/* Background Color */
+body {
+    background: #262626;
+}
+
+/* Page Background Color */
+#page,
+.menu-inside-wrapper,
+#testimonial-content-section .hentry-inner,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-total,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-loaded,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-float,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.woocommerce-account .woocommerce-MyAccount-navigation a {
+    background-color: #151515;
+}
+
+.woocommerce-pagination ul li span.current,
+.woocommerce-pagination ul li a:hover {
+    background: #151515;
+}
+
+.woocommerce-tabs ul.tabs li.active,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    border-bottom-color: #151515;
+}
+
+/* Secondary Background Color */
+hr,
+pre,
+select,
+.author-info,
+#footer-newsletter,
+#footer-social-navigation,
+.woocommerce nav.woocommerce-pagination,
+#primary-menu-wrapper #site-header-cart-wrapper,
+#testimonial-content-section,
+#portfolio-content-section.content-frame,
+#primary-search-wrapper .search-container,
+.wp-caption .wp-caption-text,
+.sidebar .widget .widget-title,
+.archive-post-wrap .entry-footer .entry-meta,
+.hero-content-wrapper .entry-container,
+#featured-content-section.style-two,
+#team-content-section,
+#top-playlist-section .wp-playlist-light.wp-playlist,
+#top-playlist-section .wp-playlist-tracks,
+.wp-audio-shortcode.my-music-band-mejs-container.mejs-container .mejs-controls,
+.wp-playlist-light .wp-playlist,
+.wp-playlist-light .wp-playlist-current-item,
+.wp-playlist-light .my-music-band-mejs-container.mejs-container .mejs-controls,
+.woocommerce-account .woocommerce-MyAccount-navigation a:hover,
+.woocommerce-account .woocommerce-MyAccount-navigation a:focus,
+.woocommerce-account .woocommerce-MyAccount-navigation .is-active a,
+.woocommerce-tabs ul.tabs li a,
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-noreviews,
+.demo_store,
+p.no-comments,
+ul.wc_payment_methods .payment_box,
+.widget_price_filter .price_slider_wrapper .ui-widget-content {
+    background-color: #1b1b1b;
+}
+
+@media screen and (min-width: 48em) {
+    table.shop_table .cart-subtotal th,
+    table.shop_table .order-total th,
+    .site-header-cart .widget_shopping_cart {
+        background-color: #1b1b1b;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .navigation-classic .main-navigation ul ul {
+        background-color: #1b1b1b;
+    }
+}
+
+body.has-header-media:not(.home) .site-header,
+body.primary-nav-bottom-border .site-header,
+body .wp-playlist-item,
+body .wp-playlist-item:last-child,
+.woocommerce nav.woocommerce-pagination ul,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-float-corner {
+    border-color: #1b1b1b;
+}
+
+/* Tertiary Background Color */
+.header-media .wrapper,
+#feature-slider-section,
+#gallery-section,
+.site-footer,
+#footer-social-navigation .social-navigation a,
+#portfolio-content-section.background-image:not(.content-frame) {
+    background-color: #151515;
+}
+
+/* 70% of Tertiary Background Color */
+#site-generator .social-navigation a,
+#colophon .wp-caption .wp-caption-text,
+.promotion-section.content-frame .entry-container-frame {
+    background-color: rgba(33,33,33, 0.75);
+}
+
+/* Main Text Color */
+body,
+input,
+select,
+textarea,
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+.image-navigation,
+.comment-navigation,
+.sidebar .widget a,
+.wp-playlist-light .wp-playlist,
+body .wp-playlist-playing,
+body .wp-playlist .wp-playlist-playing,
+body .wp-playlist .wp-playlist-playing .wp-playlist-caption,
+body .wp-playlist-current-item .wp-playlist-item-title,
+body .wp-playlist-item:hover,
+body .wp-playlist-item:focus,
+body .wp-playlist-item:hover .wp-playlist-caption,
+body .wp-playlist-item:focus .wp-playlist-caption,
+span.price ins,
+p.price ins {
+    color: #7b7b7b;
+}
+
+/* 43% of Main Text Color */
+body .wp-playlist,
+body .wp-playlist .wp-playlist-caption {
+    color: #bcbcbc;
+}
+
+/* Footer Text Color */
+#colophon .widget,
+#colophon .widget a {
+    color: #c1c1c1;
+}
+
+.site-info a,
+.site-info a:hover,
+.site-info a:focus {
+    color: #c1c1c1;
+}
+
+/* 45% of Footer Text Color */
+#colophon .widget-title,
+.widget_categories li,
+.widget_archive li,
+#colophon .widget a:hover,
+#colophon .widget a:focus,
+.site-info {
+    color: rgba( 255,255,255,0.45 );
+}
+
+/* Headline Text Color */
+h1, h2, h3, h4, h5, h6,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+.drop-cap::first-letter,
+.post-navigation a,
+.page-links > .page-links-title,
+.comment-author,
+.comment-reply-title small a:hover,
+.comment-reply-title small a:focus,
+#testimonial-content-section .section-content-wrap,
+.woocommerce-pagination ul li span.current,
+.woocommerce-pagination ul li a:hover {
+    color: #ffffff;
+}
+
+/* Link Color */
+a,
+.site-title a,
+.menu-toggle,
+.menu-toggle-close,
+.dropdown-toggle,
+#search-toggle,
+#share-toggle,
+.main-navigation a,
+.entry-title a,
+.entry-header .cat-links a:hover,
+.entry-header .cat-links a:focus,
+.more-link:hover,
+.more-link:focus,
+.events-content-wrapper .hentry:hover .event-list-item-actions a,
+.events-content-wrapper .hentry:hover .event-list-item-actions a,
+.events-content-wrapper .hentry:focus .event-list-item-actions a,
+.events-content-wrapper .hentry:focus .event-list-item-actions a,
+.widget .social-links-menu a,
+.site-header-menu .social-navigation a,
+#top-playlist-section .wp-playlist,
+#top-playlist-section .wp-playlist .wp-playlist-caption,
+#top-playlist-section .wp-playlist-current-item .wp-playlist-item-title,
+.wp-playlist-light .my-music-band-mejs-container.mejs-container button,
+table.shop_table_responsive tr td a:hover,
+table.shop_table_responsive tr td a:focus,
+.product-container a.added_to_cart:hover,
+.product-container a.added_to_cart:focus,
+.single-product .product_meta a:hover,
+.single-product .product_meta a:focus,
+.single-product div.product .woocommerce-product-rating .woocommerce-review-link:hover,
+.single-product div.product .woocommerce-product-rating .woocommerce-review-link:focus,
+.woocommerce-info a:hover,
+.woocommerce-info a:focus,
+.variations .reset_variations:hover,
+.variations .reset_variations:focus,
+.site-header-cart .cart-contents,
+.woocommerce-tabs ul.tabs li a {
+    color: #ffffff;
+}
+
+/* Link Hover Color */
+a:focus,
+a:hover,
+.site-title a:hover,
+.site-title a:focus,
+.menu-toggle:hover,
+.menu-toggle-close:hover,
+.dropdown-toggle:hover,
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a,
+#search-toggle:hover,
+#share-toggle:hover,
+.menu-toggle:focus,
+.menu-toggle-close:focus,
+.dropdown-toggle:focus,
+#search-toggle:focus,
+#share-toggle:focus,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation ul.menu li:hover > a,
+.main-navigation ul.menu li.focus > a,
+.main-navigation ul.menu li:active > a,
+.entry-header .cat-links a,
+.entry-meta a:hover,
+.entry-meta a:focus,
+.entry-title a:hover,
+.entry-title a:focus,
+.more-link,
+.comment-permalink:hover,
+.comment-permalink:focus,
+#cancel-comment-reply-link:hover,
+#cancel-comment-reply-link:focus,
+.widget .social-links-menu a:hover,
+.widget .social-links-menu a:focus,
+.site-header-menu .social-navigation a:hover,
+.site-header-menu .social-navigation a:focus,
+.post-navigation .nav-subtitle,
+.post-navigation a:hover .nav-title,
+.post-navigation a:focus .nav-title,
+.sidebar .widget a:hover,
+.sidebar .widget a:focus,
+.events-content-wrapper .hentry:focus .entry-title a,
+.events-content-wrapper .hentry:hover .entry-title a,
+#testimonial-content-section .section-content-wrapper .hentry-inner:before,
+#testimonial-content-section .cycle-pager span.cycle-pager-active,
+#team-content-section .artist-social-profile .social-navigation a:hover,
+#team-content-section .artist-social-profile .social-navigation a:focus,
+#gallery-section .entry-container a:hover,
+#gallery-section .entry-container a:focus,
+.my-music-band-mejs-container.mejs-container button:hover,
+.my-music-band-mejs-container.mejs-container button:focus,
+.wp-playlist-light .my-music-band-mejs-container.mejs-container button:hover,
+.wp-playlist-light .my-music-band-mejs-container.mejs-container button:focus,
+#top-playlist-section .wp-playlist-item:hover,
+#top-playlist-section .wp-playlist-item:focus,
+#top-playlist-section .wp-playlist-item:hover .wp-playlist-caption,
+#top-playlist-section .wp-playlist-item:focus .wp-playlist-caption,
+body .wp-playlist-item-artist,
+table.shop_table_responsive tr td a,
+.product-container a.added_to_cart,
+.single-product .product_meta a,
+.woocommerce-info a,
+.variations .reset_variations,
+.site-header-cart .cart-contents:hover,
+.site-header-cart .cart-contents:focus,
+.star-rating span:before,
+p.stars:hover a:before,
+p.stars.selected a.active:before,
+p.stars.selected a:not(.active):before,
+.woocommerce-tabs ul.tabs li.active a,
+.single-product div.product .woocommerce-product-rating .woocommerce-review-link {
+    color: #15aebf;
+}
+
+mark,
+ins,
+.page-links a,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-volume-button .mejs-volume-current,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-volume-button .mejs-volume-handle,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.widget_price_filter .ui-slider .ui-slider-handle,
+.widget_price_filter .ui-slider .ui-slider-range {
+    background-color: #15aebf;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+blockquote,
+.rtl blockquote,
+.page-links a,
+.section-title:after,
+#header-menu-social:before,
+#hero-section .entry-title:after,
+#feature-slider-section .cycle-prev:hover,
+#feature-slider-section .cycle-prev:focus,
+#feature-slider-section .cycle-next:hover,
+#feature-slider-section .cycle-next:focus,
+.woocommerce-info,
+.woocommerce-message {
+    border-color: #15aebf;
+}
+
+/* Secondary Link Color */
+.entry-meta a,
+#events-section .entry-summary::before,
+blockquote cite,
+blockquote small,
+.comment-permalink,
+#cancel-comment-reply-link,
+#testimonial-content-section .cycle-pager span,
+.my-music-band-mejs-container.mejs-container .mejs-controls .mejs-time,
+.woocommerce-pagination ul li a,
+p.stars a:before,
+p.stars a:hover ~ a:before,
+p.stars.selected a.active ~ a:before {
+    color: #979797;
+}
+
+/* Border Color */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+fieldset,
+.widget .social-links-menu a,
+#top-playlist-section .wp-playlist-item,
+#top-playlist-section .wp-playlist-tracks,
+.image-navigation,
+.comment-navigation,
+.comment-list article,
+.comment-list .pingback,
+.comment-list .trackback,
+.comment-respond,
+.no-comments,
+table,
+caption,
+tr,
+.section,
+.site-content,
+.events-content-wrapper .hentry,
+.event-list-description,
+.widget_archive li,
+.widget_archive ul ul li,
+.woocommerce-shorting-wrapper,
+.single-product .product_meta,
+.woocommerce-account .woocommerce-MyAccount-navigation,
+.woocommerce-account .woocommerce-MyAccount-navigation li,
+.woocommerce-tabs .panel,
+.woocommerce-tabs ul.tabs::after,
+.woocommerce-tabs ul.tabs li.active,
+.wp-block-table,
+.wp-block-table caption,
+.wp-block-table tr,
+.wp-block-latest-comments__comment {
+    border-color: #222222;
+}
+
+@media screen and (min-width: 64em) {
+    .event-list-description,
+    .rtl .event-list-description {
+        border-color: #222222;
+    }
+}
+
+/* Tertiary Border Color */
+.site-footer .footer-widget-area + #site-generator .site-info,
+#colophon .tagcloud a,
+#colophon .widget_archive li,
+#colophon .widget_archive ul ul li,
+#colophon .widget_calendar table,
+#colophon .widget_calendar caption,
+#colophon .widget_calendar tr,
+#colophon .widget input[type="search"].search-field {
+    border-color: #222222;
+}
+
+/* Button Text Color */
+.comment-reply-link,
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.search-submit,
+.search-submit:hover,
+.search-submit:focus,
+.posts-navigation a,
+.pagination .prev,
+.pagination .next,
+.page-links a,
+.page-links a:hover,
+.page-links a:focus,
+.header-media .more-link .readmore,
+#feature-slider-section .more-link .readmore,
+#hero-section .more-link .readmore,
+.promotion-section .more-link .readmore,
+#content #infinite-handle span button,
+#scrollup:hover,
+#scrollup:focus,
+.widget-area .catch-instagram-feed-gallery-widget-wrapper .button,
+button,
+button[disabled]:hover,
+button[disabled]:focus,
+.button,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.posts-navigation a:hover,
+.posts-navigation a:focus,
+.pagination .prev:hover,
+.pagination .prev:focus,
+.pagination .next:hover,
+.pagination .next:focus,
+.header-media .more-link .readmore:hover,
+.header-media .more-link .readmore:focus,
+#feature-slider-section .more-link .readmore:hover,
+#feature-slider-section .more-link .readmore:focus,
+#hero-section .more-link .readmore:hover,
+#hero-section .more-link .readmore:focus,
+.promotion-section .more-link .readmore:hover,
+.promotion-section .more-link .readmore:focus,
+#content #infinite-handle span button:hover,
+#content #infinite-handle span button:focus,
+#scrollup,
+.widget-area .catch-instagram-feed-gallery-widget-wrapper .button:hover,
+.widget-area .catch-instagram-feed-gallery-widget-wrapper .button:focus,
+.widget_calendar tbody a,
+.widget_calendar tbody a:hover,
+.widget_calendar tbody a:focus,
+#gallery-section .tiled-gallery .tiled-gallery-item a::after,
+#top-playlist-section .mejs-container.my-music-band-mejs-container .mejs-toggle-playlist button,
+#top-playlist-section .mejs-container.my-music-band-mejs-container .mejs-toggle-playlist button:hover,
+#top-playlist-section .mejs-container.my-music-band-mejs-container .mejs-toggle-playlist button:focus,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce button.button.alt,
+.woocommerce input.button,
+.woocommerce input.button.alt,
+.woocommerce .product-container .wc-forward,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce a.button:hover,
+.woocommerce a.button:focus,
+.woocommerce button.button:hover,
+.woocommerce button.button:focus,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button.alt:focus,
+.woocommerce input.button:hover,
+.woocommerce input.button:focus,
+.woocommerce input.button.alt:hover,
+.woocommerce input.button.alt:focus,
+.woocommerce .product-container .added,
+.woocommerce .product-container .wc-forward:hover,
+.woocommerce .product-container .wc-forward:focus,
+.woocommerce .product-container .button.added,
+.demo_store .woocommerce-store-notice__dismiss-link,
+.demo_store .woocommerce-store-notice__dismiss-link:hover,
+.demo_store .woocommerce-store-notice__dismiss-link:focus,
+#gallery-section .entry-footer .edit-link a,
+#gallery-section .entry-footer .edit-link a:hover,
+#gallery-section .entry-footer .edit-link a:focus {
+    color: #fff;
+}/* Button Text Color & Button Hover Text Color is same */
+
+/* Button Background Color */
+.events-content-wrapper .entry-meta,
+.sticky-post,
+.comment-reply-link,
+.search-submit,
+.header-media .more-link .readmore,
+#feature-slider-section .more-link .readmore,
+#hero-section .more-link .readmore,
+.promotion-section .more-link .readmore,
+.posts-navigation a,
+.pagination .prev,
+.pagination .next,
+#content #infinite-handle span button,
+#scrollup,
+.widget-area .catch-instagram-feed-gallery-widget-wrapper .button,
+.button,
+button,
+button[disabled]:hover,
+button[disabled]:focus,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+#feature-slider-section .cycle-prev:hover,
+#feature-slider-section .cycle-prev:focus,
+#feature-slider-section .cycle-next:hover,
+#feature-slider-section .cycle-next:focus,
+#feature-slider-section .cycle-pager span:hover,
+#feature-slider-section .cycle-pager span:focus,
+#feature-slider-section .cycle-pager .cycle-pager-active,
+#testimonial-content-section .cycle-prev,
+#testimonial-content-section .cycle-next,
+.widget_calendar tbody a,
+#gallery-section .tiled-gallery .tiled-gallery-item a::after,
+#top-playlist-section .mejs-container.my-music-band-mejs-container .mejs-toggle-playlist,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce button.button.alt,
+.woocommerce input.button,
+.woocommerce input.button.alt,
+.woocommerce .product-container .wc-forward,
+.demo_store .woocommerce-store-notice__dismiss-link,
+.woocommerce ul.products li.product .onsale,
+.woocommerce span.onsale,
+#gallery-section .entry-footer .edit-link a {
+    background-color: #15aebf;
+}
+
+.woocommerce .product-container .button {
+    border-color: #15aebf;
+}
+
+.woocommerce .product-container .button {
+    color: #15aebf;
+}
+
+/* Button Hover Background Color */
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.search-submit:hover,
+.search-submit:focus,
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.page-links a:hover,
+.page-links a:focus,
+.posts-navigation a:hover,
+.posts-navigation a:focus,
+.pagination .prev:hover,
+.pagination .prev:focus,
+.pagination .next:hover,
+.pagination .next:focus,
+.header-media .more-link .readmore:hover,
+.header-media .more-link .readmore:focus,
+#feature-slider-section .more-link .readmore:hover,
+#feature-slider-section .more-link .readmore:focus,
+#hero-section .more-link .readmore:hover,
+#hero-section .more-link .readmore:focus,
+.promotion-section .more-link .readmore:hover,
+.promotion-section .more-link .readmore:focus,
+#testimonial-content-section .cycle-prev:hover,
+#testimonial-content-section .cycle-prev:focus,
+#testimonial-content-section .cycle-next:hover,
+#testimonial-content-section .cycle-next:focus,
+#content #infinite-handle span button:hover,
+#content #infinite-handle span button:focus,
+#scrollup:hover,
+#scrollup:focus,
+.widget-area .catch-instagram-feed-gallery-widget-wrapper .button:hover,
+.widget-area .catch-instagram-feed-gallery-widget-wrapper .button:focus,
+.custom-header-media .wp-custom-header-video-button.wp-custom-header-video-pause,
+.custom-header-media .wp-custom-header-video-button:hover,
+.custom-header-media .wp-custom-header-video-button:focus,
+.widget_calendar tbody a:hover,
+.widget_calendar tbody a:focus,
+#top-playlist-section .mejs-container.my-music-band-mejs-container .mejs-toggle-playlist:hover,
+#top-playlist-section .mejs-container.my-music-band-mejs-container .mejs-toggle-playlist:focus,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce a.button:hover,
+.woocommerce a.button:focus,
+.woocommerce button.button:hover,
+.woocommerce button.button:focus,
+.woocommerce button.button.alt:hover,
+.woocommerce button.button.alt:focus,
+.woocommerce input.button:hover,
+.woocommerce input.button:focus,
+.woocommerce input.button.alt:hover,
+.woocommerce input.button.alt:focus,
+.woocommerce .product-container .added,
+.woocommerce .product-container .wc-forward:hover,
+.woocommerce .product-container .wc-forward:focus,
+.demo_store .woocommerce-store-notice__dismiss-link:hover,
+.demo_store .woocommerce-store-notice__dismiss-link:focus,
+#gallery-section .entry-footer .edit-link a:hover,
+#gallery-section .entry-footer .edit-link a:focus {
+    background-color: #139ead;
+}
+
+/* Text Color With Background */
+#gallery-section .section-title,
+#gallery-section .entry-container,
+#gallery-section .entry-container a,
+.has-background-image.ewnewsletter .widget-inner-wrap .section-title,
+#team-content-section .artist-social-profile .social-navigation a,
+.promotion-section.content-color-white .entry-title,
+.promotion-section.content-color-white .entry-title a,
+.promotion-section.content-color-white .entry-container,
+.promotion-section.content-color-white .entry-container a,
+.events-content-wrapper .entry-meta a,
+#site-generator .social-navigation a,
+#footer-social-navigation .social-navigation a,
+#testimonial-content-section.background-image .section-title,
+#testimonial-content-section.background-image .section-subtitle,
+#portfolio-content-section.style-two .entry-title,
+#portfolio-content-section.style-two .entry-title a,
+#portfolio-content-section.style-two .entry-content,
+#portfolio-content-section.style-two .entry-summary,
+#portfolio-content-section.background-image .section-title,
+#portfolio-content-section.background-image .section-subtitle,
+#portfolio-content-section.background-image:not(.content-frame) .entry-title,
+#portfolio-content-section.background-image:not(.content-frame) .entry-title a,
+#portfolio-content-section.background-image:not(.content-frame) .entry-content,
+#portfolio-content-section.background-image:not(.content-frame) .entry-summary,
+.custom-header-content .entry-title,
+.custom-header-content .site-header-text,
+.custom-header-content .site-header-text a,
+.custom-header-content .entry-meta a,
+.custom-header-content .entry-meta .icon,
+.custom-header-media .wp-custom-header-video-button.wp-custom-header-video-pause,
+.custom-header-media .wp-custom-header-video-button:hover,
+.custom-header-media .wp-custom-header-video-button:focus,
+#feature-slider-section .cycle-prev,
+#feature-slider-section .cycle-next,
+#feature-slider-section .cycle-pager span,
+#feature-slider-section .entry-container,
+#feature-slider-section .entry-container a,
+#feature-slider-section .entry-title,
+#feature-slider-section .entry-summary,
+#feature-slider-section .entry-content,
+.sticky-post,
+mark,
+ins {
+    color: #fff;
+}
+
+#colophon input[type="text"]:focus,
+#colophon input[type="email"]:focus,
+#colophon input[type="url"]:focus,
+#colophon input[type="password"]:focus,
+#colophon input[type="search"]:focus,
+#colophon input[type="number"]:focus,
+#colophon input[type="tel"]:focus,
+#colophon input[type="range"]:focus,
+#colophon input[type="date"]:focus,
+#colophon input[type="month"]:focus,
+#colophon input[type="week"]:focus,
+#colophon input[type="time"]:focus,
+#colophon input[type="datetime"]:focus,
+#colophon input[type="datetime-local"]:focus,
+#colophon input[type="color"]:focus,
+#colophon textarea:focus,
+#colophon select:focus {
+    color: #fff;
+}
+
+#feature-slider-section .cycle-pager span {
+    background-color: #fff;
+}
+
+#feature-slider-section .cycle-prev,
+#feature-slider-section .cycle-next {
+    border-color: #fff;
+}
+
+/* Content Frame Color */
+.site-header-menu input[type="search"].search-field,
+#top-playlist-section .wp-playlist .wp-playlist-playing,
+#featured-content-section.style-two .entry-container,
+#portfolio-content-section.content-frame .portfolio-content-wrapper,
+#team-content-section .entry-container,
+#footer-newsletter .ewnewsletter .ew-newsletter-wrap .ew-newsletter-subbox {
+    background-color: #222222;
+}
+
+/* Playlist Dark */
+#top-playlist-section .wp-playlist-dark,
+.wp-playlist-dark .mejs-container,
+.wp-playlist-dark .wp-playlist-current-item,
+.wp-playlist-dark .mejs-container .mejs-controls {
+    background-color: #232323;
+}

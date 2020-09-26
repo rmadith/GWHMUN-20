@@ -1,0 +1,22 @@
+@media (min-width: #{$tablet}) {
+}
+
+@media (min-width: #{$laptop}) {
+  @include general--laptop();
+  @include header--laptop();
+  @include sidebar--laptop();
+  @include card--laptop();
+}
+
+
+@media (min-width: #{$desktop}) {
+  @include general--desktop();
+  @include header--desktop();
+  @include card--desktop();
+}
+
+
+@media (min-width: #{$desktop-large}) {
+  @include general--desktop-large();
+  @include card--desktop-large();
+}

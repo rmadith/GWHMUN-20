@@ -1,0 +1,91 @@
+.card {
+  width: 100%;
+  display: flex;
+  max-width: unset;
+  min-width: unset;
+  border: 1px solid $grey;
+  flex-direction: column;
+  padding: 30px 40px;
+  align-self: flex-start;
+  flex-grow: 0;
+
+  .card-header {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .title {
+      font-size: 18px;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .icon {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &.agency {
+    .field-wrap div {
+      margin-bottom: 0;
+    }
+  }
+
+  .field-wrap {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    > label {
+      margin-bottom: 10px;
+    }
+
+    input, textarea {
+      border-color: $grey;
+      border-radius: 3px;
+    }
+
+    .description {
+      margin: 0;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    color: #616161;
+  }
+
+  .card-description {
+    margin: 15px 0 25px;
+  }
+}
+
+@mixin card--laptop() {
+  .card {
+    margin: 0 0 20px;
+  }
+}
+
+@mixin card--desktop() {
+  .card {
+    padding: 20px 30px;
+    margin: 0 0 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@mixin card--desktop-large() {
+  .card {
+    padding: 30px 40px;
+    margin: 0 0 30px;
+  }
+}

@@ -1,0 +1,22 @@
+.nv-payment-cart-total{
+  margin: 0 20px;
+  padding-bottom: 1em;
+}
+.nv-payment-icons-wrapper{
+  display: inline-block;
+  width: 100%;
+  margin: 0 -3px;
+  fill: #9b9b9b;
+  .nv-payment-icon{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    padding: 3px 5px 5px;
+    margin: 3px;
+    svg{
+      vertical-align: middle;
+      height: 15px;
+    }
+  }
+}
+

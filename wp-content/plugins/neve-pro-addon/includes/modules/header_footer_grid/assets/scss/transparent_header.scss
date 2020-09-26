@@ -1,0 +1,73 @@
+.neve-transparent-header {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+}
+
+.header .neve-transparent-header {
+  // We have sticky rows on mobile and we're at top (we've not been scrolling yet)
+  &.has-sticky-rows--mobile:not(.is-stuck) {
+    box-shadow: none;
+    .header--row.hide-on-desktop .header--row-inner {
+      background: transparent !important;
+
+      &:before {
+        background: transparent !important;
+      }
+    }
+
+    .nv-navbar {
+      background: transparent !important;
+    }
+  }
+
+  // We DON'T have sticky rows on mobile so all rows will be transparent regardless of the .is-stuck class.
+  &:not(.has-sticky-rows--mobile) {
+    .header--row.hide-on-desktop .header--row-inner {
+      background: transparent !important;
+
+      &:before {
+        background: transparent !important;
+      }
+    }
+
+    .nv-navbar {
+      background: transparent !important;
+    }
+  }
+}
+
+@mixin transparent--laptop() {
+  .header .neve-transparent-header {
+    // We have sticky rows on desktop and we're at top (we've not been scrolling yet)
+    &.has-sticky-rows--desktop:not(.is-stuck) {
+      box-shadow: none;
+      .header--row .header--row-inner {
+        background: transparent !important;
+
+        &:before {
+          background: transparent !important;
+        }
+      }
+
+      .nv-navbar {
+        background: transparent !important;
+      }
+    }
+
+    // We DON'T have sticky rows on desktop so all rows will be transparent regardless of the .is-stuck class.
+    &:not(.has-sticky-rows--desktop) {
+      .header--row .header--row-inner {
+        background: transparent !important;
+
+        &:before {
+          background: transparent !important;
+        }
+      }
+
+      .nv-navbar {
+        background: transparent !important;
+      }
+    }
+  }
+}

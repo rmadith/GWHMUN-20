@@ -1,0 +1,11 @@
+@import "conditional-selector/scss/main";
+
+
+#customize-control-my_account_icon_selector .neve-radio-icons {
+  flex-wrap: wrap;
+  button {
+    flex: 25%;
+    height: auto;
+    margin: 0 !important;
+  }
+}
